@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.cover {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cover-date {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+    opacity: 0.7;
+}
+
+nav {
+    background: white;
+    z-index: 2;
+    width: 40%;
+    height: 20%;
+    color: #916356;
+}
+
+.nav-closed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 40%;
+    position: absolute;
+}
+
+.nav-closed ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-open {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.clothing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.clothing h2 {
+    font-size: 50px;
+}
+
+.clothing ul li {
+    padding-bottom: 10px;
+}
+
+.clothing ul {
+    list-style: none;
+}
+
+.clothing ul li a {
+    text-decoration: none;
+    color: #916356;
+}
+
+.nav-images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-images img {
+    height: 250px;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+}
+
+
+.intro-text {
+    color: lightgoldenrodyellow;
+    font-size: 3rem;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.second-part {
+    height: 100vh;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+}
+
+.box {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
