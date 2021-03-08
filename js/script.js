@@ -3,12 +3,9 @@ const navOpen = document.querySelector('.nav-open');
 
 const tl = new TimelineLite({paused : true, reversed :true});
 
-tl.to('.cover', 1, {
-    width : '60%',
-    ease : Power2.easeOut
-})
 
-.to('nav', 1, {
+
+tl.to('nav', 1, {
     height : "100%",
     ease : Power2.easeOut
 }, 
@@ -26,19 +23,16 @@ tl.to('.cover', 1, {
         console.log('done');
     }
 })
+.fromTo('.hide-cover-text',0.5, {
+    opacity : 0,
+    x : 50,
+    ease : Power2.easeOut
+}, {
+    opacity : 1,
+    x : 0
+})
 
 
-navButton.addEventListener('click',(e)=>{
-
-    if(tl.isActive()){
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        return false;
-    }
-
-
-    toggleTween(tl)
-});
 
 navButton.addEventListener('click',(e)=>{
 
@@ -73,4 +67,7 @@ gsap.to('.second-part', {
     start : 'top top',
     },
     y : - window.innerHeight,
-})
+});
+
+
+

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +28,39 @@ header {
     right: 0;
     object-fit: cover;
     object-position: top;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.hide-cover-text {
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide-cover-text :nth-child(1) {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 10em;
+}
+
+.hide-cover-text :nth-child(2) {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    font-size: 10em;
+}
+
+.hide-cover-text :nth-child(3) {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
 }
 
 .cover-date {
@@ -39,7 +76,7 @@ nav {
     z-index: 2;
     width: 40%;
     height: 20%;
-    color: #916356;
+    color: #2F4F4F;
 }
 
 .nav-closed {
@@ -56,7 +93,13 @@ nav {
     width: 50%;
     justify-content: space-around;
     list-style: none;
+    cursor: pointer;
 }
+
+.nav-closed ul li:hover {
+    color: black;
+}
+
 
 .nav-open {
     position: absolute;
@@ -68,7 +111,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
 }
 
 .clothing {
@@ -76,6 +118,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    pointer-events: none;
 }
 
 .clothing h2 {
@@ -92,7 +135,7 @@ nav {
 
 .clothing ul li a {
     text-decoration: none;
-    color: #916356;
+    color: #2F4F4F	;
 }
 
 .nav-images {
@@ -102,7 +145,7 @@ nav {
 }
 
 .nav-images img {
-    height: 250px;
+    height: 300px;
 }
 
 .intro {
