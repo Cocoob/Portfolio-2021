@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+@font-face {
+    src:url('../font/NeueHaasUnicaPro-Regular.ttf') ;
+    font-family: neuehaasunica;
+}
+
+@font-face {
+    src:url('../font/NeueHaasUnicaPro-Bold.ttf') ;
+    font-family: neuehaasunicabold;
+}
+
+@font-face {
+    src:url('../font/SchnyderMLight.ttf') ;
+    font-family: sl;
+}
+
 
 * {
     margin: 0;
@@ -39,6 +54,7 @@ header {
     font-family: 'Anton', sans-serif;
     opacity: 0;
     pointer-events: none;
+    display: none;
 }
 
 .hide-cover-text :nth-child(1) {
@@ -57,10 +73,30 @@ header {
 
 .hide-cover-text :nth-child(3) {
     position: absolute;
-    left: 5%;
-    top: 60%;
+    right: 5%;
+    top: 70%;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
+}
+
+.hide-cover-text :nth-child(4) {
+    width: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hide-cover-text :nth-child(5) {
+    width: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .cover-date {
@@ -86,6 +122,7 @@ nav {
     height: 20%;
     width: 40%;
     position: absolute;
+    font-family: neuehaasunica;
 }
 
 .nav-closed ul {
@@ -113,7 +150,7 @@ nav {
     opacity: 0;
 }
 
-.clothing {
+.about {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,19 +158,21 @@ nav {
     pointer-events: none;
 }
 
-.clothing h2 {
+.about h2 {
     font-size: 50px;
+    font-family: sl;
 }
 
-.clothing ul li {
+.about ul li {
     padding-bottom: 10px;
+    font-family: neuehaasunica;
 }
 
-.clothing ul {
+.about ul {
     list-style: none;
 }
 
-.clothing ul li a {
+.about ul li a {
     text-decoration: none;
     color: #2F4F4F	;
 }
@@ -146,6 +185,7 @@ nav {
 
 .nav-images img {
     height: 300px;
+    cursor: pointer;
 }
 
 .intro {
