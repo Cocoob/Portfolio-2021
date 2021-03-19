@@ -161,6 +161,7 @@ nav {
 .about h2 {
     font-size: 50px;
     font-family: sl;
+    color: black;
 }
 
 .about ul li {
@@ -175,6 +176,10 @@ nav {
 .about ul li a {
     text-decoration: none;
     color: #2F4F4F	;
+}
+
+.about-box-title :nth-child(2) span {
+    padding-left: 20%;
 }
 
 .nav-images {
