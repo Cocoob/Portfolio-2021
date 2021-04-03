@@ -11,6 +11,18 @@ tl.to('nav', 1, {
 }, 
 '-= 0.5'
 )
+.to('.cover-title', 1, {
+    opacity : 0,
+    ease : Power2.easeOut
+}, 
+'-= 0.5'
+)
+.to('.cover-subtitle', 1, {
+    opacity : 0,
+    ease : Power2.easeOut
+}, 
+'-= 0.5'
+)
 .fromTo('.nav-open', 0.5, {
     opacity :0,
     x : 50,
@@ -42,6 +54,7 @@ navButton.addEventListener('click',(e)=>{
         e.stopImmediatePropagation();
         return false;
     }
+
 
 
     toggleTween(tl)
